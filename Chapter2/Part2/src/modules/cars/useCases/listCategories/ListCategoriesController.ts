@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import { CategoriesRepository } from "../../repositories/CategoriesRepository";
-import { categoriesRepository } from "../createCategory";
 import { ListCategoriesUseCase } from "./ListCategoriesUseCase";
 
 
