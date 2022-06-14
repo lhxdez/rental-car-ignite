@@ -1,0 +1,11 @@
+{
+    "openapi" : "3.0.3",
+    "info" : {
+        "title" : "RentalX Doc",
+        "description" : "This is an API Rent",
+        "version" : "1.0.0",
+        "contact" : {
+            "email" : "lucgom@alunos.utfpr.edu.br"
+        }
+    }
+}
