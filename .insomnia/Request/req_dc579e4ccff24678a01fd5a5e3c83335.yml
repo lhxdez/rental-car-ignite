@@ -1,0 +1,33 @@
+_id: req_dc579e4ccff24678a01fd5a5e3c83335
+type: Request
+parentId: fld_7879834d13324aaebe23be0bef07cf5b
+modified: 1655228744254
+created: 1655227849518
+url: "{{ _.baseURL }}/categories/import"
+name: import category
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_3583237efe564757bcc207c403a1b5b5
+      name: file
+      value: ""
+      description: ""
+      type: file
+      multiline: null
+      fileName: /Users/lucasgomes/Documents/teste.csv
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_2dd46da268a1490ca154b6f00e0c45ec
+authentication: {}
+metaSortKey: -1655227849518
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
