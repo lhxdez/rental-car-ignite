@@ -1,0 +1,30 @@
+_id: req_4f1040565c5747e394c65356635a09a3
+type: Request
+parentId: fld_7879834d13324aaebe23be0bef07cf5b
+modified: 1655227695015
+created: 1654543096709
+url: "{{ _.baseURL }}/categories/post-category"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name" : "cat1",
+    	"description" : "category1"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_9908c8f27b684e23aca24a1284a3dd8d
+authentication: {}
+metaSortKey: -1654543096709
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
