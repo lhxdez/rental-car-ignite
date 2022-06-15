@@ -1,10 +1,32 @@
 version: '3.8'
 
 services:
+  soul-of-cinder:
+    image: postgres
+    container_name: soul-of-cinder
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=ignite
+      - POSTGRES_DB=soul-of-cinder
+    volumes:
+      - pgdata:/data/postgres
+
   app:
     build: .
-    container_name: ashenOne
+    container_name: ashen-one
     ports: 
       - 3333:3333
     volumes:
       - .:/usr/app
+    links:
+      - soul-of-cinder
+    depends_on:
+      - soul-of-cinder
+    
+
+volumes:
+  pgdata:
+    driver: local
