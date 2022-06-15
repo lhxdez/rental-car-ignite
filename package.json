@@ -1,10 +1,11 @@
 {
-  "name": "Part2",
+  "name": "rental-car-ignite",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js -d src/database/data-source.ts"
   },
   "dependencies": {
     "@types/swagger-ui-express": "^4.1.3",
