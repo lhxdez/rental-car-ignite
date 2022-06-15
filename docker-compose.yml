@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     build: .
-    container_name: ash
+    container_name: ashenOne
     ports: 
       - 3333:3333
     volumes:
