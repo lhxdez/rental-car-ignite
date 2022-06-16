@@ -1,10 +1,10 @@
 import { Router } from 'express'
-import { SpecificationRepository } from '../modules/cars/repositories/implementations/SpecificationRepository'
+import { ensureAuthenticated } from '../middlewares/ensureAuthenticated'
 import { CreateSpecificationController } from '../modules/cars/useCases/createSpecification/CreateSpecificationController'
-import { CreateSpecificationUseCase } from '../modules/cars/useCases/createSpecification/CreateSpecificationUseCase'
 
 export const specificationsRoutes = Router()
 
 const createSpecificationController = new CreateSpecificationController()
 
+specificationsRoutes.use(ensureAuthenticated)
 specificationsRoutes.post('/', createSpecificationController.handle)
