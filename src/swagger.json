@@ -1,72 +1,72 @@
 {
-    "openapi": "3.0.1",
-    "info": {
-        "title": "RentX Documentation",
-        "description": "This is an API Rent",
-        "version": "1.0.0",
-        "contact": {
-            "email": "lucgom@alunos.utfpr.edu.br"
+    "openapi" : "3.0.3",
+    "info" : {
+        "title" : "RentalX Doc",
+        "description" : "This is an API Rent",
+        "version" : "1.0.4",
+        "contact" : {
+            "email" : "lucgom@alunos.utfpr.edu.br"
         }
     },
-    "paths": {
-        "/categories": {
-            "post": {
-                "tags": [
-                    "Category"
-                ],
-                "summary": "Create a category",
-                "description": "Create a new category",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
+    "paths" : {
+        "/categories/post-category" : {
+            "post" : {
+                "tags" : ["Category"],
+                "summary" : "Create a category",
+                "description" : "Create a new category",
+                "requestBody" : {
+                    "content" : {
+                        "application/json" : {
                             "schema": {
-                                "type": "object",
+                                "type" : "object",
                                 "properties": {
-                                    "name": {
+                                    "name" : {
                                         "type": "string"
                                     },
-                                    "description": {
+                                    "description" : {
                                         "type": "string"
                                     }
                                 },
-                                "example": {
-                                    "name": "category name sample",
-                                    "description": "Category description sample"
+                                "example" : {
+                                    "name" : "category name sample",
+                                    "description" : "category description sample"
                                 }
                             }
                         }
                     }
                 },
-                "responses": {
-                    "201": {
-                        "description": "Created"
+                "responses" : {
+                    "201" : {
+                        "description" : "Created"
                     },
-                    "500": {
-                        "description": "Category already exists"
+                    "500" : {
+                        "description" : "Category already exists"
                     }
-                }
-            },
-            "get": {
-                "tags": [
-                    "Category"
-                ],
-                "summary": "List all categories",
-                "description": "List all categories",
-                "responses": {
-                    "200": {
-                        "description": "Success",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "name": {
-                                                "type": "string"
-                                            },
-                                            "description": {
-                                                "type": "string"
+                }  
+            }
+        },
+        "/categories/list-categories" : {
+            "get" : {
+                "tags" : ["Category"],
+                "summary" : "List all categories",
+                "description" : "List all categories",
+                "responses" : {
+                    "200" : {
+                        "description" : "Success",
+                        "content" : {
+                            "application" : {
+                                "application/json" : {
+                                    "schema" : {
+                                        "type" : "array",
+                                        "items" : {
+                                            "type" : "object",
+                                            "properties" : {
+                                                "name" : {
+                                                    "type" : "string" 
+                                                },
+                                                "description" : {
+                                                    "type" : "string"
+                                                }
                                             }
                                         }
                                     }
@@ -117,19 +117,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "type": "object",
-                                "properties": {
-                                    "name": {
-                                        "type": "string"
-                                    },
-                                    "description": {
-                                        "type": "string"
-                                    }
-                                },
-                                "example": {
-                                    "name": "category name sample",
-                                    "description": "Category description sample"
-                                }
+                                "$ref": "#/definitions/Specification"
                             }
                         }
                     }
@@ -144,5 +132,18 @@
                 }
             }
         }
+    },
+    "definitions" : {
+        "Specification": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
     }
 }
