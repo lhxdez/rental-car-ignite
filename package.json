@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js -d src/database/data-source.ts"
+    "run:typeorm": "ts-node-dev ./node_modules/typeorm/cli.js -d src/database/data-source.ts",
+    "create:typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "@types/swagger-ui-express": "^4.1.3",
