@@ -1,11 +1,11 @@
 import { container } from 'tsyringe'
 import 'reflect-metadata'
-import { CategoriesRepository } from '@modules/cars/repositories/implementations/CategoriesRepository'
+import { CategoriesRepository } from '@modules/cars/infra/typeorm/repositories/CategoriesRepository'
 import { ICategoryRepository } from '@modules/cars/repositories/ICategoryRepository'
 import { ISpecificationRepository } from '@modules/cars/repositories/ISpecificationRepository'
-import { SpecificationRepository } from '@modules/cars/repositories/implementations/SpecificationRepository'
 import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository'
-import { UsersRepository } from '@modules/accounts/repositories/implementations/UsersRepository'
+import { UsersRepository } from '@modules/accounts/infra/typeorm/repositories/UsersRepository'
+import { SpecificationRepository } from '@modules/cars/infra/typeorm/repositories/SpecificationRepository'
 
 container.registerSingleton<ICategoryRepository>(
   'CategoriesRepository',

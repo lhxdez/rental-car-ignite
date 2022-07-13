@@ -1,7 +1,10 @@
-import { Category } from '@modules/cars/entities/Category'
+import { Category } from '@modules/cars/infra/typeorm/entities/Category'
 import 'reflect-metadata'
 import { getRepository, Repository } from 'typeorm'
-import { ICategoryRepository, ICreateCategoryDTO } from '../ICategoryRepository'
+import {
+  ICategoryRepository,
+  ICreateCategoryDTO,
+} from '../../../repositories/ICategoryRepository'
 
 class CategoriesRepository implements ICategoryRepository {
   private repository: Repository<Category>
