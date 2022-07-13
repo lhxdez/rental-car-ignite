@@ -1,4 +1,4 @@
-import { UsersRepository } from '../modules/accounts/repositories/implementations/UsersRepository'
+import { UsersRepository } from '@modules/accounts/repositories/implementations/UsersRepository'
 import { NextFunction, Request, Response } from 'express'
 import { verify } from 'jsonwebtoken'
 import { AppError } from '../errors/AppErrors'
@@ -35,7 +35,7 @@ export async function ensureAuthenticated(
     }
 
     req.user = {
-      id: user_id 
+      id: user_id,
     }
 
     next()
