@@ -5,9 +5,9 @@
     "username": "docker",
     "password": "ignite",
     "database": "soul-of-cinder",
-    "migrations": ["./src/database/migrations/*.ts"],
+    "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
     "entities": ["./src/modules/cars/entities/*.ts", "./src/modules/accounts/entities/*.ts"],
     "cli": {
-      "migrationsDir": "./src/database/migrations"
+      "migrationsDir": "./src/shared/infra/typeorm/migrations"
     }
 }    
