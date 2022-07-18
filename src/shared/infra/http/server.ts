@@ -8,7 +8,7 @@ import swaggerFile from '../../../swagger.json'
 import '../typeorm'
 
 import '../../container'
-import { AppError } from '../../errors/AppErrors'
+import { AppError } from '../../errors/AppError'
 
 const app = express()
 

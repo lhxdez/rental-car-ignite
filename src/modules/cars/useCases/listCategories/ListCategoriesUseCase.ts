@@ -1,4 +1,4 @@
-import { ICategoryRepository } from '@modules/cars/repositories/ICategoryRepository'
+import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository'
 import { inject, injectable } from 'tsyringe'
 import { Category } from '../../infra/typeorm/entities/Category'
 
@@ -6,7 +6,7 @@ import { Category } from '../../infra/typeorm/entities/Category'
 export class ListCategoriesUseCase {
   constructor(
     @inject('CategoriesRepository')
-    private categoriesRepository: ICategoryRepository,
+    private categoriesRepository: ICategoriesRepository,
   ) {}
 
   async execute(): Promise<Category[]> {
