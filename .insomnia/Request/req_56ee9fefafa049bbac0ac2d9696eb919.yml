@@ -1,0 +1,34 @@
+_id: req_56ee9fefafa049bbac0ac2d9696eb919
+type: Request
+parentId: fld_da03bfa2c3104c85aca41cf3bc38120c
+modified: 1658670393772
+created: 1655558020066
+url: "{{ _.baseURL }}/users/avatar"
+name: avatar
+description: ""
+method: PATCH
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_55a4f69500f14b669ef457d95e203367
+      name: avatar
+      value: ""
+      description: ""
+      type: file
+      fileName: D:\Dev\rocketseat\rental-car-ignite\src\assets\MarvelVsCapcom2_bg_Gamerview.jpeg
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_7fbdeab8a24f41999e25b39ae2658916
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1655558020066
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
