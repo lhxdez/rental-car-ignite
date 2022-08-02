@@ -4,6 +4,7 @@ import {
   Entity,
   JoinColumn,
   JoinTable,
+  ManyToMany,
   ManyToOne,
   PrimaryColumn,
 } from 'typeorm'
@@ -44,7 +45,7 @@ export class Car {
   @Column()
   category_id: string
 
-  @ManyToOne(() => Specification)
+  @ManyToMany(() => Specification)
   @JoinTable({
     name: 'specifications_cars',
     joinColumns: [{ name: 'car_id' }],
