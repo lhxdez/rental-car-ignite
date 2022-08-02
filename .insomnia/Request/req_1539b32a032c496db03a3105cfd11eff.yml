@@ -1,0 +1,25 @@
+_id: req_1539b32a032c496db03a3105cfd11eff
+type: Request
+parentId: fld_d95e8b1c40c140b4885a779a258e810b
+modified: 1659403316745
+created: 1658962880078
+url: "{{ _.baseURL }}/cars/available"
+name: New Request
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_82a1ef9b085b4b6d9054c5e814a5a56a
+    name: category_id
+    value: 90bddf8a-554b-4368-9b5d-1ccd34a7e450
+    description: ""
+headers: []
+authentication: {}
+metaSortKey: -1658962880078
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

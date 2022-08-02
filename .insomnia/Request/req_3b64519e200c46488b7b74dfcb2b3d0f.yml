@@ -1,28 +1,28 @@
-_id: req_4f1040565c5747e394c65356635a09a3
+_id: req_3b64519e200c46488b7b74dfcb2b3d0f
 type: Request
-parentId: fld_7879834d13324aaebe23be0bef07cf5b
-modified: 1659403263762
-created: 1654543096709
-url: "{{ _.baseURL }}/categories/post-category"
-name: Create
+parentId: fld_d6b1e8075cb545bea92b20466df67d05
+modified: 1659403890329
+created: 1659402394003
+url: "{{ _.baseURL }}/specifications/"
+name: New Request
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"name" : "cat1",
-    	"description" : "category1"
+    	"name" : "teste de spe2 2",
+    	"description": "teste de desc"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_9908c8f27b684e23aca24a1284a3dd8d
+    id: pair_a0b1f34c4b5b4307928eac7c42363df7
 authentication:
   type: bearer
   token: "{{ _.tokenAdmin }}"
-metaSortKey: -1654543096709
+metaSortKey: -1659402394003
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

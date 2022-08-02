@@ -1,7 +1,7 @@
 _id: req_11e1131a4a8e484fb71310355978d907
 type: Request
 parentId: fld_da03bfa2c3104c85aca41cf3bc38120c
-modified: 1655561909909
+modified: 1659403213776
 created: 1655558144301
 url: "{{ _.baseURL }}/users/"
 name: crewate
@@ -11,10 +11,10 @@ body:
   mimeType: application/json
   text: |-
     {
-    	    "name" : "lucas",
+    	    "name" : "admin",
           "password" : "1234",
           "driver_license" : "1234",
-          "email" : "l@e.com"
+          "email" : "admin@e.com"
     }
 parameters: []
 headers:

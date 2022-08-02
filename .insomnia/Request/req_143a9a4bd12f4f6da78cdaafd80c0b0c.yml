@@ -1,33 +1,30 @@
-_id: req_eaae39cadeab475da6c2711e51b3ee2f
+_id: req_143a9a4bd12f4f6da78cdaafd80c0b0c
 type: Request
 parentId: fld_d95e8b1c40c140b4885a779a258e810b
-modified: 1659403299961
-created: 1658167964599
-url: "{{ _.baseURL }}/cars/"
-name: create car
+modified: 1659403905323
+created: 1659402271135
+url: "{{ _.baseURL }}/cars/specifications/4ff07e81-ee99-43db-a6e3-e0fb0366060e"
+name: Specifications
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-          "name" : "Audi A6",
-          "description" : "Carros",
-          "daily_rate" : 100,
-          "license_plate" : "ABC-40000",
-          "fine_amount" : 50,
-          "brand" : "Audi",
-          "category_id" : "90bddf8a-554b-4368-9b5d-1ccd34a7e450"
+    	"specifications_id" : [
+    		"2351c67d-1860-40d3-a82b-a0cbb9be99fb",
+    		"9eb4f7e6-47e1-493e-ac9f-1345938a2a7d"
+    	]
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_200ebc2c83b44a30a8e0f9bb07bdba18
+    id: pair_0e06d225d6f040feaf7370ac75342f0c
 authentication:
   type: bearer
   token: "{{ _.tokenAdmin }}"
-metaSortKey: -1658167964599
+metaSortKey: -1659402271135
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
