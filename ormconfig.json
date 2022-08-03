@@ -6,7 +6,7 @@
     "password": "ignite",
     "database": "soul-of-cinder",
     "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
-    "entities": ["./src/modules/cars/infra/typeorm/entities/*.ts", "./src/modules/accounts/infra/typeorm/entities/*.ts"],
+    "entities": ["./src/modules/cars/infra/typeorm/entities/*.ts", "./src/modules/accounts/infra/typeorm/entities/*.ts", "./src/modules/rentals/infra/typeorm/entities/*.ts"],
     "cli": {
       "migrationsDir": "./src/shared/infra/typeorm/migrations"
     }
