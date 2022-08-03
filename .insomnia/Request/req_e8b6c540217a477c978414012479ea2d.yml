@@ -1,7 +1,7 @@
 _id: req_e8b6c540217a477c978414012479ea2d
 type: Request
 parentId: fld_d95e8b1c40c140b4885a779a258e810b
-modified: 1659406503640
+modified: 1659490094831
 created: 1659406340953
 url: "{{ _.baseURL }}/cars/images/4ff07e81-ee99-43db-a6e3-e0fb0366060e"
 name: images
@@ -15,14 +15,12 @@ body:
       value: ""
       description: ""
       type: file
-      multiline: null
       fileName: D:\Dev\rocketseat\rental-car-ignite\src\assets\MarvelVsCapcom2_bg_Gamerview.jpeg
     - id: pair_f05b4f5e1501495688115da3d8039062
       name: images
       value: ""
       description: ""
       type: file
-      multiline: null
       fileName: D:\OneDrive\Imagens\7efd407baf1e9e7ac39c8a55d8ba08098dd31a09.jpg
 parameters: []
 headers:
