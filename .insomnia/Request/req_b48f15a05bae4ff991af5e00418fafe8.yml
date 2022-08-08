@@ -1,28 +1,19 @@
-_id: req_c0a33d214c3041b7b735fd698155f99f
+_id: req_b48f15a05bae4ff991af5e00418fafe8
 type: Request
 parentId: fld_154e6b93a9ba49208fc06593625b4df5
-modified: 1659921373390
-created: 1659490175310
-url: "{{ _.baseURL }}/rentals"
-name: Create
+modified: 1659921410657
+created: 1659915707311
+url: "{{ _.baseURL }}/rentals/devolution/d3ea1718-f9af-4851-b01a-ff7e6263b59a"
+name: Devolutio
 description: ""
 method: POST
-body:
-  mimeType: application/json
-  text: |-
-    {
-    	"expected_return_date": "2022-08-20T01:46:26.882Z",
-    	"car_id" : "9a4de0cc-5e36-4258-9f34-77fc99f838e6"
-    }
+body: {}
 parameters: []
-headers:
-  - name: Content-Type
-    value: application/json
-    id: pair_87140729839144aca24bac6f65a8fee0
+headers: []
 authentication:
   type: bearer
   token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTk5MTYzOTgsImV4cCI6MTY2MDAwMjc5OCwic3ViIjoiZTY5MzBhNTEtZmEyMy00ZmQxLTk0MDQtYWU1MDQ4ZDc5YjVlIn0.08AtsDlohtqfAflK_V242fjGDIkaWX7kSX-WhY5GvdU
-metaSortKey: -1659490175310
+metaSortKey: -1659915707311
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
