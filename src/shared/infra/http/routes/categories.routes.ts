@@ -15,14 +15,19 @@ const createCategoryController = new CreateCategoryController()
 const importCategoryController = new ImportCategoryController()
 const listCategoriesController = new ListCategoriesController()
 
-categoriesRoutes.post('/post-category', ensureAuthenticated, ensureAdmin, createCategoryController.handle)
+categoriesRoutes.post(
+  '/',
+  ensureAuthenticated,
+  ensureAdmin,
+  createCategoryController.handle,
+)
 
-categoriesRoutes.get('/list-categories', listCategoriesController.handle)
+categoriesRoutes.get('/', listCategoriesController.handle)
 
 categoriesRoutes.post(
   '/import',
   upload.single('file'),
-  ensureAuthenticated, 
+  ensureAuthenticated,
   ensureAdmin,
   importCategoryController.handle,
 )
