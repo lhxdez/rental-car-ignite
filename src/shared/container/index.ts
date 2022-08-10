@@ -1,18 +1,23 @@
 import { container } from 'tsyringe'
+
 import '@shared/container/providers'
-import 'reflect-metadata'
-import { CategoriesRepository } from '@modules/cars/infra/typeorm/repositories/CategoriesRepository'
-import { ISpecificationRepository } from '@modules/cars/repositories/ISpecificationRepository'
-import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository'
+
 import { UsersRepository } from '@modules/accounts/infra/typeorm/repositories/UsersRepository'
-import { SpecificationRepository } from '@modules/cars/infra/typeorm/repositories/SpecificationRepository'
+import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository'
+import { CategoriesRepository } from '@modules/cars/infra/typeorm/repositories/CategoriesRepository'
+import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository'
 import { ICarsRepository } from '@modules/cars/repositories/ICarsRepository'
 import { CarsRepository } from '@modules/cars/infra/typeorm/repositories/CarsRepository'
-import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository'
 import { ICarsImagesRepository } from '@modules/cars/repositories/ICarsImagesRepository'
 import { CarsImagesRepository } from '@modules/cars/infra/typeorm/repositories/CarsImagesRepository'
 import { IRentalsRepository } from '@modules/rentals/repositories/IRentalsRepository'
 import { RentalsRepository } from '@modules/rentals/infra/typeorm/repositories/RentalsRepository'
+import { IUsersTokensRepository } from '@modules/accounts/repositories/IUsersTokensRepository'
+import { UsersTokensRepository } from '@modules/accounts/infra/typeorm/repositories/UsersTokensRepository'
+import { ISpecificationRepository } from '@modules/cars/repositories/ISpecificationRepository'
+import { SpecificationRepository } from '@modules/cars/infra/typeorm/repositories/SpecificationRepository'
+import { IDateProvider } from './providers/DateProvider/IDateProvider'
+import { DayjsDateProvider } from './providers/DateProvider/implementations/DayjsDateProvider'
 
 container.registerSingleton<ICategoriesRepository>(
   'CategoriesRepository',
@@ -20,7 +25,7 @@ container.registerSingleton<ICategoriesRepository>(
 )
 
 container.registerSingleton<ISpecificationRepository>(
-  'SpecificationRepository',
+  'SpecificationsRepository',
   SpecificationRepository,
 )
 
@@ -39,4 +44,9 @@ container.registerSingleton<ICarsImagesRepository>(
 container.registerSingleton<IRentalsRepository>(
   'RentalsRepository',
   RentalsRepository,
+)
+
+container.registerSingleton<IUsersTokensRepository>(
+  'UsersTokensRepository',
+  UsersTokensRepository,
 )
