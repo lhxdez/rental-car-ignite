@@ -1,10 +1,12 @@
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
+import { injectable } from 'tsyringe'
 
 import { IDateProvider } from '../IDateProvider'
 
 dayjs.extend(utc)
 
+@injectable()
 class DayjsDateProvider implements IDateProvider {
   compareInHours(start_date: Date, end_date: Date): number {
     const end_date_utc = this.convertToUTC(end_date)
