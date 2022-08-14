@@ -1,0 +1,29 @@
+_id: req_e200bd59bfe5402d97552ca7d30853c7
+type: Request
+parentId: fld_4c9bb043ad404c4abbc34d2b83780e18
+modified: 1660514377475
+created: 1660169390987
+url: "{{ _.baseURL }}/refresh-token"
+name: New Request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHJlbnRhbC5jb20uYnIiLCJpYXQiOjE2NjA0MjcwNTMsImV4cCI6MTY2MzAxOTA1Mywic3ViIjoiNDk4MWU1MWItMjBhMy00Y2JkLWI5ZmMtZTZkNjFmZmQ2YjIyIn0.OOxDh4EqKjjLCaoE-vlyBVNysjM3T2qlRKU2XwCcpp0"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_07eed66d0c7346fc84fad423b71239ea
+authentication: {}
+metaSortKey: -1660169390987
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,9 +1,9 @@
 _id: req_4f1040565c5747e394c65356635a09a3
 type: Request
 parentId: fld_7879834d13324aaebe23be0bef07cf5b
-modified: 1659403263762
+modified: 1660170233605
 created: 1654543096709
-url: "{{ _.baseURL }}/categories/post-category"
+url: "{{ _.baseURL }}/categories"
 name: Create
 description: ""
 method: POST
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"name" : "cat1",
+    	"name" : "cat1sss",
     	"description" : "category1"
     }
 parameters: []
@@ -21,7 +21,7 @@ headers:
     id: pair_9908c8f27b684e23aca24a1284a3dd8d
 authentication:
   type: bearer
-  token: "{{ _.tokenAdmin }}"
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHJlbnRhbC5jb20uYnIiLCJpYXQiOjE2NjAxNzAyMDcsImV4cCI6MTY2Mjc2MjIwNywic3ViIjoiNDk4MWU1MWItMjBhMy00Y2JkLWI5ZmMtZTZkNjFmZmQ2YjIyIn0.dMNdyf4kbrN66j4W2nYXNdOZOylWxiJNXbOEgTqAofU
 metaSortKey: -1654543096709
 isPrivate: false
 settingStoreCookies: true

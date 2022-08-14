@@ -1,7 +1,7 @@
 _id: req_eaae39cadeab475da6c2711e51b3ee2f
 type: Request
 parentId: fld_d95e8b1c40c140b4885a779a258e810b
-modified: 1659403299961
+modified: 1660167923525
 created: 1658167964599
 url: "{{ _.baseURL }}/cars/"
 name: create car
@@ -26,7 +26,7 @@ headers:
     id: pair_200ebc2c83b44a30a8e0f9bb07bdba18
 authentication:
   type: bearer
-  token: "{{ _.tokenAdmin }}"
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjAxNjc4OTksImV4cCI6MTY2MDE2ODc5OSwic3ViIjoiNDk4MWU1MWItMjBhMy00Y2JkLWI5ZmMtZTZkNjFmZmQ2YjIyIn0.l0MLCDVUFsDvxGYXQ5OQlqIyfTpYpeHgetGoGdLh83w
 metaSortKey: -1658167964599
 isPrivate: false
 settingStoreCookies: true
