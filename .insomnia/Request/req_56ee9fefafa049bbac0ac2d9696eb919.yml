@@ -1,7 +1,7 @@
 _id: req_56ee9fefafa049bbac0ac2d9696eb919
 type: Request
 parentId: fld_da03bfa2c3104c85aca41cf3bc38120c
-modified: 1658964528957
+modified: 1660515307690
 created: 1655558020066
 url: "{{ _.baseURL }}/users/avatar"
 name: avatar
@@ -23,7 +23,7 @@ headers:
     id: pair_7fbdeab8a24f41999e25b39ae2658916
 authentication:
   type: bearer
-  token: "{{ _.token }}"
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjA1MTUxODMsImV4cCI6MTY2MDUxNjA4Mywic3ViIjoiNDk4MWU1MWItMjBhMy00Y2JkLWI5ZmMtZTZkNjFmZmQ2YjIyIn0.A3Qc5vWfYhCuTv3EHf7IMpgfnJdXXCY5UJui34Lgdmk
 metaSortKey: -1655558020066
 isPrivate: false
 settingStoreCookies: true

@@ -1,7 +1,7 @@
 _id: req_e1f37e8c5c4e4b0f93bc064c27ea0162
 type: Request
 parentId: fld_154e6b93a9ba49208fc06593625b4df5
-modified: 1660001668070
+modified: 1660168108735
 created: 1660001627340
 url: "{{ _.baseURL }}/rentals/user"
 name: list by user
@@ -12,7 +12,7 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjAwMDE2NjMsImV4cCI6MTY2MDA4ODA2Mywic3ViIjoiZTY5MzBhNTEtZmEyMy00ZmQxLTk0MDQtYWU1MDQ4ZDc5YjVlIn0.s1hbxGfvIDCRW8DnoDhV2mwTfxmu2JX7iC_p8GcP_Yo
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjAxNjgxMDIsImV4cCI6MTY2MDE2OTAwMiwic3ViIjoiNDk4MWU1MWItMjBhMy00Y2JkLWI5ZmMtZTZkNjFmZmQ2YjIyIn0.nfGJJfPub1KPqsOBkR_1x-gLMqo8oesnPWjtfndN5-4
 metaSortKey: -1660001627340
 isPrivate: false
 settingStoreCookies: true

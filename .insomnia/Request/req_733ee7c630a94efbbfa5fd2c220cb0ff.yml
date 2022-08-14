@@ -1,26 +1,25 @@
-_id: req_6abaf24bf7614b46b5aef2bfbd16b7f0
+_id: req_733ee7c630a94efbbfa5fd2c220cb0ff
 type: Request
-parentId: fld_da03bfa2c3104c85aca41cf3bc38120c
-modified: 1660515102126
-created: 1655558092846
-url: "{{ _.baseURL }}/sessions"
-name: sessions
+parentId: fld_9eaf76fb7c4e42cabcbe7cfc7c8073b2
+modified: 1660406380894
+created: 1660258709159
+url: "{{ _.baseURL }}/password/forgot"
+name: forgot
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"email" : "admin@rental.com.br",
-    	"password" : "admin"
+    	"email" : "lucas@e.com"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_b301bd7aed764a45a9da142028180d0e
+    id: pair_bed551182fc746d7bc98ed8e111a67c1
 authentication: {}
-metaSortKey: -1655558092846
+metaSortKey: -1660258709159
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

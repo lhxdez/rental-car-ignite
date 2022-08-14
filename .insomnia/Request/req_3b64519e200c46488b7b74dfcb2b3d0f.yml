@@ -1,7 +1,7 @@
 _id: req_3b64519e200c46488b7b74dfcb2b3d0f
 type: Request
 parentId: fld_d6b1e8075cb545bea92b20466df67d05
-modified: 1659916568051
+modified: 1660258545706
 created: 1659402394003
 url: "{{ _.baseURL }}/specifications/"
 name: New Request
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"name" : "teste de spe2 2",
-    	"description": "teste de desc"
+    	"name" : "teste de spe2 2ewrtghfer",
+    	"description": "teste de adsdesc"
     }
 parameters: []
 headers:
@@ -21,7 +21,7 @@ headers:
     id: pair_a0b1f34c4b5b4307928eac7c42363df7
 authentication:
   type: bearer
-  token: "{{ _.tokenAdmin }}"
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHJlbnRhbC5jb20uYnIiLCJpYXQiOjE2NjAxNzA2MDAsImV4cCI6MTY2Mjc2MjYwMCwic3ViIjoiNDk4MWU1MWItMjBhMy00Y2JkLWI5ZmMtZTZkNjFmZmQ2YjIyIn0.sqqGIioxWnsUsFYpeUbvC-wOdahB82i2jQjlFlPg2zI
 metaSortKey: -1659402394003
 isPrivate: false
 settingStoreCookies: true
