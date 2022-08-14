@@ -1,10 +1,12 @@
 import { inject, injectable } from 'tsyringe'
-
 import { ICarsRepository } from '@modules/cars/repositories/ICarsRepository'
 import { Rental } from '@modules/rentals/infra/typeorm/entities/Rental'
 import { IRentalsRepository } from '@modules/rentals/repositories/IRentalsRepository'
-import { IDateProvider } from '@shared/container/providers/DateProvider/IDateProvider'
 import { AppError } from '@shared/errors/AppError'
+
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+dayjs.extend(utc)
 
 interface IRequest {
   id: string
@@ -18,8 +20,6 @@ export class DevolutionRentalUseCase {
     private rentalsRepository: IRentalsRepository,
     @inject('CarsRepository')
     private carsRepository: ICarsRepository,
-    @inject('DayjsDateProvider')
-    private dateProvider: IDateProvider,
   ) {}
 
   async execute({ id, user_id }: IRequest): Promise<Rental> {
@@ -32,21 +32,19 @@ export class DevolutionRentalUseCase {
       throw new AppError('Rental does not exists!')
     }
 
-    const dateNow = this.dateProvider.dateNow()
+    const dateNow = dayjs().toDate()
 
-    let daily = this.dateProvider.compareInDays(
-      rental.start_date,
-      this.dateProvider.dateNow(),
-    )
+    const end_date_utc = dayjs(dayjs().toDate()).utc().local().format()
+
+    const start_date_utc = dayjs(rental.start_date).utc().local().format()
+
+    let daily = dayjs(end_date_utc).diff(start_date_utc, 'days')
 
     if (daily <= 0) {
       daily = minimum_daily
     }
 
-    const delay = this.dateProvider.compareInDays(
-      dateNow,
-      rental.expected_return_date,
-    )
+    const delay = dayjs(rental.expected_return_date).diff(dateNow, 'days')
 
     let total = 0
 
@@ -57,7 +55,7 @@ export class DevolutionRentalUseCase {
 
     total += daily * car.daily_rate
 
-    rental.end_date = this.dateProvider.dateNow()
+    rental.end_date = dayjs().toDate()
     rental.total = total
 
     await this.rentalsRepository.create(rental)
