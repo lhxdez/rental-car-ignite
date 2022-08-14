@@ -16,8 +16,6 @@ import { IUsersTokensRepository } from '@modules/accounts/repositories/IUsersTok
 import { UsersTokensRepository } from '@modules/accounts/infra/typeorm/repositories/UsersTokensRepository'
 import { ISpecificationRepository } from '@modules/cars/repositories/ISpecificationRepository'
 import { SpecificationRepository } from '@modules/cars/infra/typeorm/repositories/SpecificationRepository'
-import { IDateProvider } from './providers/DateProvider/IDateProvider'
-import { DayjsDateProvider } from './providers/DateProvider/implementations/DayjsDateProvider'
 
 container.registerSingleton<ICategoriesRepository>(
   'CategoriesRepository',

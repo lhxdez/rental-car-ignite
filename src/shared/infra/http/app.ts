@@ -28,6 +28,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   }
   return res.status(500).json({
     status: 'error',
-    message: `Internal server error - ${err.message}, ${err.stack}, ${err.name}`,
+    message: `Internal server error - ${err.message}, \n \n ${err.stack}`,
   })
 })

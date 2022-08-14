@@ -1,7 +1,6 @@
 import { compare } from 'bcryptjs'
 import { sign } from 'jsonwebtoken'
 import { inject, injectable } from 'tsyringe'
-
 import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository'
 import { AppError } from '@shared/errors/AppError'
 import { IUsersTokensRepository } from '@modules/accounts/repositories/IUsersTokensRepository'
@@ -9,7 +8,6 @@ import auth from '@config/auth'
 
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
-
 dayjs.extend(utc)
 
 interface IRequest {
@@ -27,7 +25,7 @@ interface IResponse {
 }
 
 @injectable()
-class AuthenticateUserUseCase {
+export class AuthenticateUserUseCase {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
@@ -87,5 +85,3 @@ class AuthenticateUserUseCase {
     return tokenReturn
   }
 }
-
-export { AuthenticateUserUseCase }
